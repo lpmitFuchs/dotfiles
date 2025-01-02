@@ -8,3 +8,15 @@
 [submodule "hyprland-starter"]
 	path = hyprland-starter
 	url = https://github.com/mylinuxforwork/hyprland-starter.git
+[submodule "zsh-autosuggestions"]
+	path = zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "zsh-syntax-highlighting"]
+	path = zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "fzf-zsh-plugin"]
+	path = fzf-zsh-plugin
+	url = https://github.com/unixorn/fzf-zsh-plugin.git
+[submodule "powerlevel10k"]
+	path = powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git

@@ -8,7 +8,12 @@
 - create:
     - ~/.tmux/plugins
     - ~/.config/yamlfmt
-    - '~/Library/Application Support/lazygit'
+
+- shell:
+    - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+- shell:
+    - command: cp -r hypr/* ~/.config/hypr/
 
 - link:
     ~/.tmux.conf: tmux.conf
@@ -19,6 +24,14 @@
     ~/.zshrc: zshrc
     ~/.p10k.zsh: p10k.zsh
     ~/.gitconfig: gitconfig
+    ~/.config/rofi: rofi
+    ~/.config/ghostty: ghostty
+    ~/.config/hypr: hypr
+    ~/.config/waybar: waybar
+    ~/.oh-my-zsh/custom/plugins/fzf-zsh-plugin: fzf-zsh-plugin
+    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: zsh-autosuggestions
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: zsh-syntax-highlighting
+    ~/.oh-my-zsh/custom/themes/powerlevel10k: powerlevel10k
 
 - shell:
     - [
