@@ -12,9 +12,6 @@
 - shell:
     - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-- shell:
-    - command: cp -r hypr/* ~/.config/hypr/
-
 - link:
     ~/.tmux.conf: tmux.conf
     ~/.tmux/plugins/tpm: tpm
@@ -26,7 +23,10 @@
     ~/.gitconfig: gitconfig
     ~/.config/rofi: rofi
     ~/.config/ghostty: ghostty
-    ~/.config/hypr: hypr
+    ~/.config/hypr:
+      force: true
+      glob: true
+      path: hypr
     ~/.config/waybar: waybar
     ~/.oh-my-zsh/custom/plugins/fzf-zsh-plugin: fzf-zsh-plugin
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: zsh-autosuggestions
