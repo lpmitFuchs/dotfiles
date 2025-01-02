@@ -115,13 +115,14 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
 fi
 
 #ssh-add ~/.ssh/id_rsa
-
 export EDITOR="/usr/bin/nvim"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:/usr/bin/vendor_perl:$PATH"
 
+eval "$(zoxide init bash)"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source $HOME/.aliases
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
