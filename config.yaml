@@ -1,0 +1,38 @@
+---
+- defaults:
+    links:
+      relink: true
+      create: true
+
+- clean: ['~']
+- create:
+    - ~/.tmux/plugins
+    - ~/.config/yamlfmt
+    - '~/Library/Application Support/lazygit'
+
+- link:
+    ~/.tmux.conf: tmux.conf
+    ~/.tmux/plugins/tpm: tpm
+    ~/.config/nvim: nvim
+    ~/.config/yamlfmt/.yamlfmt: yamlfmt
+    ~/.aliases: aliases
+    ~/.zshrc: zshrc
+    ~/.p10k.zsh: p10k.zsh
+    ~/.gitconfig: gitconfig
+
+- shell:
+    - [
+      yay -S --noconfirm
+      tmux
+      direnv
+      nvim
+      go
+      node
+      lazygit
+      ripgrep
+      snappy
+      tree-sitter
+      yamllint
+      zsh-completion
+      npm
+      awscli, Installing required packages]

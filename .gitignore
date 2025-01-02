@@ -1,0 +1,4 @@
+lazy-lock.json
+nvim/lua/overrides/*
+!.gitkeep
+**.DS_Store

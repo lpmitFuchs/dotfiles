@@ -1,0 +1,26 @@
+---
+extends: default
+ignore: .git/
+rules:
+  comments:
+    min-spaces-from-content: 1
+  braces:
+    min-spaces-inside: 0
+    max-spaces-inside: 1
+  brackets:
+    min-spaces-inside: 0
+    max-spaces-inside: 1
+  indentation:
+    spaces: 2
+    indent-sequences: consistent
+  line-length:
+    max: 100
+    allow-non-breakable-words: true
+    allow-non-breakable-inline-mappings: true
+  document-start: enable
+  new-line-at-end-of-file: enable
+  empty-lines:
+    max: 2
+    max-end: 1
+
+
