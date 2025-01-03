@@ -1,12 +1,9 @@
-main
 arch-init
-arch-hypr
+arch-settings
 arch-dev
 arch-general
 arch-k8s
 arch-noc
-arch-nvidia
 arch-office
 arch-ops
-arch-settings
 pip
