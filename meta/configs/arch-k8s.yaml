@@ -1,0 +1,9 @@
+---
+
+- yay:
+    - kubectl
+    - kube-ps1
+    - openlens-bin
+    - k9s
+    - krew
+

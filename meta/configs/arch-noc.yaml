@@ -1,0 +1,10 @@
+---
+
+- yay:
+    - net-tools
+    - gnu-netcat
+    - mtr
+    - whois
+    - tcpdump
+    - wireguard-tools
+

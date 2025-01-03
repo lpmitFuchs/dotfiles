@@ -1,0 +1,38 @@
+---
+
+- link:
+    ~/.config/rofi: tools/rofi
+    ~/.config/hypr:
+      force: true
+      glob: true
+      path: gui/hypr/hypr
+    ~/.config/waybar: gui/hypr/waybar
+    ~/.config/dunst: gui/hypr/dunst
+    ~/.config/wlogout: gui/hypr/wlogout
+
+- yay:
+    - hyprpaper
+    - wlogout
+    - cliphist
+    - rofi
+    - xorg-xwayland
+    - hyprland
+    - waybar
+    - rofi-wayland
+    - dunst
+    - thunar
+    - xdg-desktop-portal-hyprland
+    - qt5-wayland
+    - qt6-wayland
+    - hyprlock
+    - ttf-font-awesome
+    - fastfetch
+    - ttf-fira-sans
+    - ttf-fira-code
+    - ttf-firacode-nerd
+    - fuse2
+    - gtk4
+    - libadwaita
+    - jq
+    - python-gobject
+

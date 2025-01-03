@@ -1,0 +1,4 @@
+---
+
+- shell:
+    - command: conda activate base; pip install ansible aws-cli black

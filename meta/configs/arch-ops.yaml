@@ -1,0 +1,10 @@
+---
+
+- yay:
+    - whois
+    - remmina
+    - remmina-plugin-rdesktop
+    - cheese
+    - lima
+    - terraform
+

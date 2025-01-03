@@ -1,0 +1,12 @@
+---
+
+- yay:
+    - nvidia-dkms
+    - nvidia-utils
+    - lib32-nvidia-utils
+    - nvidia-settings
+    - vulkan-icd-loader
+    - vulkan-tools
+    - lib32-vulkan-icd-loader
+    - cuda
+

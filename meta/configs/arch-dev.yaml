@@ -1,0 +1,17 @@
+---
+
+- yay:
+    - neovim
+    - dbeaver
+    - lazygit
+    - miniconda3
+    - conda-zsh-completion
+    - tmux
+    - direnv
+    - go
+    - node
+    - ripgrep
+    - snappy
+    - tree-sitter
+    - yamllint
+    - npm
