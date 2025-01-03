@@ -11,6 +11,10 @@
     - ~/Documents
     - ~/GIT
 
+- create:
+    ~/.ssh:
+      mode: 0700
+
 - shell:
     - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
