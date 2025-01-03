@@ -18,7 +18,6 @@
     - xorg-xwayland
     - hyprland
     - waybar
-    - rofi-wayland
     - dunst
     - thunar
     - xdg-desktop-portal-hyprland

@@ -6,10 +6,9 @@
     - lazygit
     - miniconda3
     - conda-zsh-completion
-    - tmux
     - direnv
     - go
-    - node
+    - aws-cli
     - ripgrep
     - snappy
     - tree-sitter

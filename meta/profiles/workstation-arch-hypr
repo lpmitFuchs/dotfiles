@@ -1,0 +1,12 @@
+main
+arch-init
+arch-hypr
+arch-dev
+arch-general
+arch-k8s
+arch-noc
+arch-nvidia
+arch-office
+arch-ops
+arch-settings
+pip

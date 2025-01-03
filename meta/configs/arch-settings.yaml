@@ -4,7 +4,6 @@
     - bluez
     - bluez-utils
     - blueberry
-    - network-manager-applet
     - pulseaudio
     - pavucontrol
     - fwupd
