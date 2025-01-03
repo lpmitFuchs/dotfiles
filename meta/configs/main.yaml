@@ -1,0 +1,55 @@
+---
+- create:
+    - ~/.tmux/plugins
+    - ~/.config/yamlfmt
+    - ~/Documents
+    - ~/GIT
+
+- create:
+    ~/.ssh:
+      mode: 0700
+
+#- shell:
+#    - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+- yay:
+  - asciiquarium
+
+- link:
+    ~/.tmux.conf: terminals/tmux.conf
+    ~/.tmux/plugins/tpm: terminals/tpm
+    ~/.config/nvim: editors/nvim
+    ~/.config/yamlfmt/.yamlfmt: tools/yamlfmt
+    ~/.aliases: tools/aliases
+    ~/.zshrc: shells/zsh/zshrc
+    ~/.p10k.zsh: shells/zsh/p10k.zsh
+    ~/.gitconfig: tools/git/gitconfig
+    ~/.config/rofi: tools/rofi
+    ~/.config/ghostty: terminals/ghostty
+    ~/.config/hypr:
+      force: true
+      glob: true
+      path: gui/hypr/hypr
+    ~/.config/waybar: gui/hypr/waybar
+    ~/.config/dunst: gui/hypr/dunst
+    ~/.config/wlogout: gui/hypr/wlogout
+    ~/.oh-my-zsh/custom/plugins/fzf-zsh-plugin: shells/zsh/fzf-zsh-plugin
+    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: shells/zsh/zsh-autosuggestions
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: shells/zsh/zsh-syntax-highlighting
+    ~/.oh-my-zsh/custom/themes/powerlevel10k: shells/zsh/powerlevel10k
+
+- shell:
+    - [
+      yay -S --noconfirm
+      tmux
+      direnv
+      nvim
+      go
+      node
+      lazygit
+      ripgrep
+      snappy
+      tree-sitter
+      yamllint
+      zsh-completion
+      npm
+      awscli, Installing required packages]

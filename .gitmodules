@@ -1,19 +1,22 @@
 [submodule "dotbot"]
-	path = dotbot
+	path = meta/dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
 [submodule "tpm"]
-	path = tpm
+	path = terminals/tpm
 	url = https://github.com/tmux-plugins/tpm
 [submodule "zsh-autosuggestions"]
-	path = zsh-autosuggestions
+	path = shells/zsh/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
 [submodule "zsh-syntax-highlighting"]
-	path = zsh-syntax-highlighting
+	path = shells/zsh/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "fzf-zsh-plugin"]
-	path = fzf-zsh-plugin
+	path = shells/zsh/fzf-zsh-plugin
 	url = https://github.com/unixorn/fzf-zsh-plugin.git
 [submodule "powerlevel10k"]
-	path = powerlevel10k
+	path = shells/zsh/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "dotbot-yay"]
+	path = meta/dotbot-yay
+	url = https://github.com/oxson/dotbot-yay
