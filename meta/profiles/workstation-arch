@@ -1,6 +1,5 @@
 main
 arch-init
-arch-hyper
 arch-dev
 arch-general
 arch-k8s
