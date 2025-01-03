@@ -12,5 +12,9 @@ cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
 git submodule update --init --recursive "tpm"
+git submodule update --init --recursive "zsh-autosuggestions"
+git submodule update --init --recursive "zsh-syntax-highlighting"
+git submodule update --init --recursive "fzf-zsh-plugin"
+git submodule update --init --recursive "powerlevel10k"
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"

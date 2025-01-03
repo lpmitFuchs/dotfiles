@@ -4,26 +4,68 @@ install-yay () {
   sudo pacman -S --needed --noconfirm git base-devel && git clone https://aur.archlinux.org/yay.git ~/yay && cd ~/yay && makepkg -si
 }
 
-make-dirs () {
-  mkdir /home/$USER/Documents
-  mkdir /home/$USER/GIT
-}
-
 install-settings () {
   yay -S --noconfirm \
     bluez \
     bluez-utils \
     blueberry \
-    #network-manager-applet \
+    network-manager-applet \
     pulseaudio \
     pavucontrol \
-    fwupd
+    fwupd \
+    nwg-look \
+    update-grub
+}
+
+install-nvidia () {
+  yay -S --noconfirm --needed \
+    nvidia-dkms \
+    nvidia-utils \
+    lib32-nvidia-utils \
+    nvidia-settings \
+    vulkan-icd-loader \
+    vulkan-tools \
+    lib32-vulkan-icd-loader
+}
+
+install-hypr () {
+  yay -S --noconfirm \
+    hyprpaper \
+    wlogout \
+    cliphist \
+    rofi \
+    xorg-xwayland \
+    hyprland \
+    waybar \
+    rofi-wayland \
+    alacritty \
+    dunst \
+    thunar \
+    xdg-desktop-portal-hyprland \
+    qt5-wayland \
+    qt6-wayland \
+    hyprlock \
+    ttf-font-awesome \
+    fastfetch \
+    ttf-fira-sans \
+    ttf-fira-code \
+    ttf-firacode-nerd \
+    fuse2 \
+    gtk4 \
+    libadwaita \
+    jq \
+    python-gobject
 }
 
 install-general () {
   yay -S --noconfirm \
    zsh \
    lsd \
+   wget \
+   unzip \
+   gum \
+   rsync \
+   figlet \
    keyring \
    neofetch \
    btop \
@@ -38,7 +80,8 @@ install-general () {
    joplin-appimage \
    rpi-imager \
    mkinitcpio-pkcs11 \
-   yubico-authenticator
+   yubico-authenticator \
+   zoxide
 }
 
 install-office () {
@@ -46,12 +89,11 @@ install-office () {
     evolution \
     libreoffice-fresh-de \
     chromium \
-    flameshot
+    flameshot-git
 }
 
 install-ops () {
   yay -S --noconfirm \
-    #aws-cli \
     whois \
     remmina \
     remmina-plugin-rdesktop \
@@ -88,12 +130,19 @@ install-dev () {
     conda-zsh-completion
 }
 
-echo "make std dirs"
-make-dirs
+install-pip () {
+  conda activate base; pip install \
+    ansible \
+    aws-cli \
+    black
+}
+
 echo "install yay"
 install-yay
 echo "install settings"
 install-settings
+#install-nvidia
+#install-hypr
 echo "install general"
 install-general
 echo "install office"
@@ -108,3 +157,4 @@ echo "install ops"
 install-ops
 echo "install noc"
 install-noc
+#install-pip
