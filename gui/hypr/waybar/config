@@ -23,7 +23,7 @@
         "hyprland/workspaces"
     ],
     "modules-right": [
-        // "mpd",
+        "mpris",
         "pulseaudio",
         "network",
         "disk",
