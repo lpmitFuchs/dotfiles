@@ -1,0 +1,5 @@
+---
+
+- shell:
+  - command: "kubectl krew update; kubectl krew install ns ctx"
+    description: "install krew plugins"

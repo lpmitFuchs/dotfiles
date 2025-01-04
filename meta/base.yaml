@@ -21,10 +21,14 @@
       mode: 0700
 
 - shell:
-    - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || echo ok
+      description: "install ohmyzsh"
+      stdin: true
 
 - shell:
     - command: git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf; ~/.fzf/install
+      description: "install fzf"
+      stdin: true
 
 - link:
     ~/.tmux.conf: terminals/tmux.conf
