@@ -20,8 +20,11 @@
     ~/.ssh:
       mode: 0700
 
-#- shell:
-#    - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+- shell:
+    - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+- shell:
+    - command: git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf; ~/.fzf/install
 
 - link:
     ~/.tmux.conf: terminals/tmux.conf
