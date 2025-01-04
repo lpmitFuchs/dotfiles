@@ -1,7 +1,8 @@
 ---
 
 - link:
-    ~/.config/rofi: tools/rofi
+    ~/.config/rofi: tools/rofi/rofi/files
+    ~/.config/custom/rofi: tools/rofi/custom
     ~/.config/hypr:
       force: true
       glob: true

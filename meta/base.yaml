@@ -12,6 +12,7 @@
 - create:
     - ~/.tmux/plugins
     - ~/.config/yamlfmt
+    - ~/.config/custom
     - ~/Documents
     - ~/GIT
 
