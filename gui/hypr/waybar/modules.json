@@ -41,7 +41,7 @@
     "custom/appmenu": {
         "format": "Apps",
         "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings",
-        "on-click": "rofi -show drun -replace",
+        "on-click": "~/.config/custom/rofi/app-overview.sh",
         "tooltip": false
     },
     
@@ -50,6 +50,7 @@
         "format": "",
         "tooltip-format": "Powermenu",
         "on-click": "wlogout -b 4",
+        "on-click-right": "~/.config/custom/rofi/powermenu.sh",
         "tooltip": false
     },
 
@@ -68,20 +69,20 @@
 
     // System
     "custom/system": {
-        "format": "test123",
+        "format": "hardware",
         "tooltip": false
     },
 
     // CPU
     "cpu": {
         "format": "/ C {usage}% ",
-        "on-click": "alacritty -e htop"
+        "on-click": "ghostty --command=btop"
     },
 
     // Memory
     "memory": {
         "format": "/ M {}% ",
-        "on-click": "alacritty -e htop"
+        "on-click": "ghostty --command=btop"
     },
 
     // Harddisc space used
@@ -89,7 +90,7 @@
         "interval": 30,
         "format": "D {percentage_used}% ",
         "path": "/",
-        "on-click": "alacritty -e htop"
+        "on-click": "ghostty --command=btop"
     }, 
 
     "hyprland/language": {
@@ -124,7 +125,7 @@
         "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50,
-        "on-click": "alacritty -e nmtui"
+        "on-click": "ghostty"
     },
 
     // Battery
@@ -173,13 +174,6 @@
         "format-no-controller": ""
     },
 
-    // Other
-    "user": {
-        "format": "{user}",
-        "interval": 60,
-        "icon": false,
-    },
-
     // Idle Inhibator
     "idle_inhibitor": {
         "format": "{icon}",
@@ -189,5 +183,30 @@
             "deactivated": ""
         },
         "on-click-right": "hyprlock"        
-    }
+    },
+    "mpd": {
+      "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
+      "format-disconnected": "Disconnected ",
+      "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+      "interval": 10,
+      "consume-icons": {
+          "on": " " // Icon shows only when "consume" is on
+      },
+      "random-icons": {
+          "off": "<span color=\"#f53c3c\"></span> ", // Icon grayed out when "random" is off
+          "on": " "
+      },
+      "repeat-icons": {
+          "on": " "
+      },
+      "single-icons": {
+          "on": "1 "
+      },
+      "state-icons": {
+          "paused": "",
+          "playing": ""
+      },
+      "tooltip-format": "MPD (connected)",
+      "tooltip-format-disconnected": "MPD (disconnected)"
+  }
 }

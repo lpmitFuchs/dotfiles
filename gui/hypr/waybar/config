@@ -23,14 +23,16 @@
         "hyprland/workspaces"
     ],
     "modules-right": [
-        "mpd", 
-        "pulseaudio", 
-        "network", 
-        "cpu", 
-        "memory", 
-        "keyboard-state", 
-        "battery", 
-        "clock", 
+        // "mpd",
+        "pulseaudio",
+        "network",
+        "disk",
+        "cpu",
+        "memory",
+        // "group/hardware",
+        // "keyboard-state",
+        // "battery",
+        "clock",
         "tray",
         "custom/exit"
     ]
