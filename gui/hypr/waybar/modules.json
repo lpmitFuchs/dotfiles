@@ -39,8 +39,8 @@
 
     // Rofi Application Launcher
     "custom/appmenu": {
-        "format": "Apps",
-        "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings",
+        "format": " 󰀻 ",
+        "tooltip-format": "Left: Open the application launcher",
         "on-click": "~/.config/custom/rofi/app-overview.sh",
         "tooltip": false
     },
@@ -67,50 +67,37 @@
         "format-alt": "{:%d-%m-%Y}"
     },
 
-    // System
-    "custom/system": {
-        "format": "hardware",
-        "tooltip": false
-    },
-
     // CPU
     "cpu": {
-        "format": "/ C {usage}% ",
+        "format": "  {usage}% ",
         "on-click": "ghostty --command=btop"
     },
 
     // Memory
     "memory": {
-        "format": "/ M {}% ",
+        "format": "  {}% ",
         "on-click": "ghostty --command=btop"
     },
 
     // Harddisc space used
     "disk": {
         "interval": 30,
-        "format": "D {percentage_used}% ",
+        "format": "  {percentage_used}% ",
         "path": "/",
         "on-click": "ghostty --command=btop"
     }, 
 
     "hyprland/language": {
-        "format": "/ K {short}"
+        "format": "  {short}"
     },
 
     // Group Hardware
     "group/hardware": {
-        "orientation": "inherit",
-        "drawer": {
-            "transition-duration": 300,
-            "children-class": "not-memory",
-            "transition-left-to-right": false
-        },        
+        "orientation": "horizontal",
         "modules": [
-            "custom/system",
             "disk",
             "cpu",
-            "memory",
-            "hyprland/language"
+            "memory"
         ]
     },
     
@@ -118,14 +105,13 @@
     "network": {
         "format": "{ifname}",
         "format-wifi": "   {signalStrength}%",
-        "format-ethernet": "  {ipaddr}",
+        "format-ethernet": "  {ipaddr}",
         "format-disconnected": "Not connected", //An empty format will hide the module.
         "tooltip-format": " {ifname} via {gwaddri}",
         "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
         "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
         "tooltip-format-disconnected": "Disconnected",
-        "max-length": 50,
-        "on-click": "ghostty"
+        "max-length": 50
     },
 
     // Battery
@@ -136,7 +122,7 @@
             "critical": 15
         },
         "format": "{icon}   {capacity}%",
-        "format-charging": "  {capacity}%",
+        "format-charging": "󱐋 {capacity}%",
         "format-plugged": "  {capacity}%",
         "format-alt": "{icon}  {time}",
         // "format-good": "", // An empty format will hide the module
@@ -149,8 +135,8 @@
         // "scroll-step": 1, // %, can be a float
         "format": "{icon}  {volume}%",
         "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-bluetooth-muted": "  {icon} {format_source}",
+        "format-muted": " ",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -160,7 +146,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", " ", " "]
+            "default": ["", "", " "]
         },
         "on-click": "pavucontrol"
     },
@@ -185,11 +171,12 @@
         "on-click-right": "hyprlock"        
     },
     "mpris": {
-      "format": " {player_icon} {title} by {artist} ",
-      "format-paused": " {status_icon} <i>{title}</i>  ",
+      "format": "{player_icon}  {title} by {artist}",
+      "format-paused": "{status_icon} <i>{title}</i>",
       "player-icons": {
         "default": "",
-        "firefox": ""
+        "firefox": "",
+        "spotify": ""
       },
       "status-icons": {
         "paused": ""

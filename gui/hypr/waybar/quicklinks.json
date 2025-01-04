@@ -1,18 +1,19 @@
 {
     "custom/quicklink2": {
-        // "format": " ",
-        "format": "🌐",
+        "format": " ",
+        //"format": "🌐",
         "on-click": "firefox",
         "tooltip-format": "Open the browser"
     },
     "custom/quicklink3": {
-        //"format": " ",
-        "format": "📂",
+        "format": " ",
+        //"format": "📂",
         "on-click": "thunar",
         "tooltip-format": "Open the filemanager"
     }, 
     "custom/quicklink4": {
-        "format": "🖥️",
+        //"format": "🖥️",
+        "format": "",
         "on-click": "ghostty",
         "tooltip-format": "Open the Terminal"
     }, 
