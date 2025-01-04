@@ -188,12 +188,11 @@
       "format": " {player_icon} {title} by {artist} ",
       "format-paused": " {status_icon} <i>{title}</i>  ",
       "player-icons": {
-        "default": "▶️",
-        "mpv": "🎵",
-        "firefox": "🌐"
+        "default": "",
+        "firefox": ""
       },
       "status-icons": {
-        "paused": "⏸"
+        "paused": ""
       },
       // "ignored-players": ["firefox"]
     }
