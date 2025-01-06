@@ -1,72 +1,51 @@
-/*
-          _                         _    
-__      _| | ___   __ _  ___  _   _| |_  
-\ \ /\ / / |/ _ \ / _` |/ _ \| | | | __| 
- \ V  V /| | (_) | (_| | (_) | |_| | |_  
-  \_/\_/ |_|\___/ \__, |\___/ \__,_|\__| 
-                  |___/                  
- 
-by Stephan Raabe (2024) 
------------------------------------------------------ 
-*/
-
 * {
-    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
 	background-image: none;
-	transition: 20ms;
 	box-shadow: none;
 }
 
-window {
-	background-color: rgba(12, 12, 12, 0.8);
-}
-
-button {
-	color: #FFFFFF;
-    font-size:20px;
-
-    background-repeat: no-repeat;
-	background-position: center;
-	background-size: 25%;
-	border-style: solid;
-	border: 3px solid #FFFFFF;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-
-button:focus,
-button:active,
-button:hover {
-    color: #FFFFFF;
-	border: 3px solid #FFFFFF;
-}
-
-/* 
------------------------------------------------------ 
-Buttons
------------------------------------------------------ 
-*/
-
 #lock {
-	margin: 10px;
-	border-radius: 20px;
-	background-image: image(url("icons/lock.png"));
+    background-image: url("/home/robin/.config/wlogout/icons/lock.svg");
 }
 
 #logout {
-	margin: 10px;
-	border-radius: 20px;
-	background-image: image(url("icons/logout.png"));
+    background-image: url("/home/robin/.config/wlogout/icons/logout.svg");
+}
+
+#suspend {
+    background-image: url("/home/robin/.config/wlogout/icons/suspend.svg");
+}
+
+#hibernate {
+    background-image: url("/home/robin/.config/wlogout/icons/hibernate.svg");
 }
 
 #shutdown {
-	margin: 10px;
-	border-radius: 20px;
-	background-image: image(url("icons/shutdown.png"));
+    background-image: url("/home/robin/.config/wlogout/icons/shutdown.svg");
 }
 
 #reboot {
-	margin: 10px;
-	border-radius: 20px;
-	background-image: image(url("icons/reboot.png"));
+    background-image: url("/home/robin/.config/wlogout/icons/reboot.svg");
+}
+
+window {
+	background-color: rgba(30, 30, 46, 0.90);
+}
+
+button {
+	border-radius: 0;
+	border-color: #89dceb;
+	text-decoration-color: #cdd6f4;
+	color: #cdd6f4;
+	background-color: #181825;
+	border-style: solid;
+	border-width: 1px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+}
+
+button:focus, button:active, button:hover {
+	/* 20% Overlay 2, 80% mantle */
+	background-color: rgb(48, 50, 66);
+	outline-style: none;
 }
