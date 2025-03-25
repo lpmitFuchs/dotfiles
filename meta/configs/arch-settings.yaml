@@ -4,7 +4,7 @@
     - bluez
     - bluez-utils
     - blueberry
-    - pulseaudio
+    - pipewire-pulse
     - pavucontrol
     - fwupd
     - nwg-look
