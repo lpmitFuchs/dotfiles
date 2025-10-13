@@ -10,15 +10,15 @@
  * ----------------------------------------------------- 
 */
 
-@define-color backgroundlight #FFFFFF;
-@define-color backgrounddark #FFFFFF;
-@define-color workspacesbackground1 #FFFFFF;
-@define-color workspacesbackground2 #CCCCCC;
+@define-color backgroundlight #1e1e2e;
+@define-color backgrounddark #1e1e2e;
+@define-color workspacesbackground1 #181825;
+@define-color workspacesbackground2 #1e1e2e;
 @define-color bordercolor #FFFFFF;
-@define-color textcolor1 #000000;
-@define-color textcolor2 #000000;
-@define-color textcolor3 #FFFFFF;
-@define-color iconcolor #FFFFFF;
+@define-color textcolor1 #89dceb;
+@define-color textcolor2 #89dceb;
+@define-color textcolor3 #89dceb;
+@define-color iconcolor #89dceb;
 
 /* -----------------------------------------------------
  * General 
@@ -28,10 +28,11 @@
     font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     border: none;
     border-radius: 0px;
+    font-size: 17px;
 }
 
 window#waybar {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0);
     border-bottom: 0px solid #ffffff;
     /* color: #FFFFFF; */
     transition-property: background-color;
@@ -49,7 +50,6 @@ window#waybar {
     border: 0px;
     font-weight: bold;
     font-style: normal;
-    font-size: 16px;
     color: @textcolor1;
 }
 
@@ -59,6 +59,7 @@ window#waybar {
     border-radius: 15px;
     border: 0px;
     color: @textcolor3;
+    background: @workspacesbackground1;
     transition: all 0.3s ease-in-out;
 }
 

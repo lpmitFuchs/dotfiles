@@ -1,6 +1,6 @@
 #!/bin/bash
 
-interval=300
+interval=60
 directory=~/Pictures/wallpapers
 monitor=`hyprctl monitors | grep Monitor | awk '{print $2}'`
 
