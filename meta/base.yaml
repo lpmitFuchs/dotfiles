@@ -20,15 +20,15 @@
     ~/.ssh:
       mode: 0700
 
-- shell:
-    - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || echo ok
-      description: "install ohmyzsh"
-      stdin: true
+#- shell:
+#    - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || echo ok
+#      description: "install ohmyzsh"
+#      stdin: true
 
-- shell:
-    - command: git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf; ~/.fzf/install
-      description: "install fzf"
-      stdin: true
+#- shell:
+#    - command: git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf; ~/.fzf/install
+#      description: "install fzf"
+#      stdin: true
 
 - link:
     ~/.tmux.conf: terminals/tmux.conf
@@ -44,3 +44,6 @@
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: shells/zsh/zsh-autosuggestions
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: shells/zsh/zsh-syntax-highlighting
     ~/.oh-my-zsh/custom/themes/powerlevel10k: shells/zsh/powerlevel10k
+    ~/.config/qt5ct: gui/qt5ct
+    ~/.config/gtk-3.0: gui/gtk-3
+    ~/.local/share/icons/candy-icons: gui/candy-icons

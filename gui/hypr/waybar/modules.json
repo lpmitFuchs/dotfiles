@@ -34,7 +34,8 @@
             "(.*) - Outlook": "$1",
             "(.*) Microsoft Teams": "$1"
         },
-        "separate-outputs": true
+        "separate-outputs": true,
+        "tooltip": false
     },
 
     // Rofi Application Launcher
