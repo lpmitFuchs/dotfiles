@@ -12,7 +12,7 @@ fi
 
 # define the config files
 keybinds_conf="$HOME/.config/hypr/conf/binds.conf"
-rofi_theme="$HOME/.config/rofi/config-keybinds.rasi"
+rofi_theme="$HOME/.config/rofi/launchers/type-4/style-2.rasi"
 msg='☣️ NOTE ☣️: Clicking with Mouse or Pressing ENTER will have NO function'
 
 # combine the contents of the keybinds files and filter for keybinds

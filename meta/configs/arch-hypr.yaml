@@ -18,8 +18,11 @@
     - rofi
     - xorg-xwayland
     - hyprland
+    - hypridle
     - waybar
     - dunst
+    - cpio
+    - bc
     - thunar
     - xdg-desktop-portal-hyprland
     - qt5-wayland
