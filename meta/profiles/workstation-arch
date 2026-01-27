@@ -4,7 +4,6 @@ arch-dev
 arch-general
 arch-k8s
 arch-noc
-arch-nvidia
 arch-office
 arch-ops
 pip
