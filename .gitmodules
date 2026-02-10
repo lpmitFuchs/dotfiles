@@ -17,9 +17,6 @@
 [submodule "powerlevel10k"]
 	path = shells/zsh/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
-[submodule "tools/rofi/rofi"]
-	path = tools/rofi/rofi
-	url = https://github.com/adi1090x/rofi.git
 [submodule "gui/candy-icons"]
 	path = gui/candy-icons
 	url = https://github.com/EliverLara/candy-icons.git
