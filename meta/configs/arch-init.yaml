@@ -1,4 +1,4 @@
 ---
 
 - shell:
-    - command: sudo pacman -S --needed --noconfirm git base-devel && git clone https://aur.archlinux.org/yay.git ~/yay && cd ~/yay && makepkg -si || echo ok
+    - command: sudo pacman -S --needed --noconfirm git base-devel && git clone https://aur.archlinux.org/paru.git ~/paru && cd ~/paru && makepkg -si --noconfirm && cd .. && rm -rf paru || echo ok
