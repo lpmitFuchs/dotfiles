@@ -127,7 +127,7 @@ fi
 
 source $HOME/cnpg.zsh
 export EDITOR="/usr/bin/nvim"
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:/home/robin/go/bin:/usr/bin/vendor_perl:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$Home/go/bin:/usr/bin/vendor_perl:$PATH"
 export AWS_PROFILE=home
 export EDITOR="nvim"
 
@@ -143,6 +143,6 @@ export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
 
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
-[[ -f /home/robin/.dart-cli-completion/zsh-config.zsh ]] && . /home/robin/.dart-cli-completion/zsh-config.zsh || true
+[[ -f $HOME/.dart-cli-completion/zsh-config.zsh ]] && . $HOME/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
