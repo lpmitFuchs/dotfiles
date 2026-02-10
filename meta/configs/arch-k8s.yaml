@@ -1,6 +1,6 @@
 ---
 
-- yay:
+- paru:
     - kubectl
     - kube-ps1
     - openlens-bin

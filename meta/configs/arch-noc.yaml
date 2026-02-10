@@ -1,6 +1,6 @@
 ---
 
-- yay:
+- paru:
     - net-tools
     - gnu-netcat
     - mtr

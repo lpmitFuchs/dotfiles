@@ -1,8 +1,5 @@
 ---
 
-- yay:
-    - evolution
+- paru:
     - libreoffice-fresh-de
     - chromium
-    - flameshot-git
-
