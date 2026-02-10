@@ -1,11 +1,10 @@
 ---
 
-- yay:
+- paru:
     - zsh
     - lsd
     - wget
     - unzip
-    - gum
     - rsync
     - figlet
     - keyring
@@ -15,17 +14,7 @@
     - noto-color-emoji-fontconfig
     - ttf-hack
     - ttf-meslo-nerd-font-powerlevel10k
-    - telegram-desktop
-    - spotify
     - meld
-    - discord
     - joplin-appimage
-    - rpi-imager
-    - mkinitcpio-pkcs11
     - yubico-authenticator
-    - zoxide
     - tmux
-    - yazi
-    - dust
-    - gdu
-
