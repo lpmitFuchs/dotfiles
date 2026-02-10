@@ -1,13 +1,6 @@
 ---
 
-- yay:
-    - bluez
-    - bluez-utils
-    - blueberry
+- paru:
     - pipewire-pulse
-    - pavucontrol
     - fwupd
-    - nwg-look
     - update-grub
-    - pamixer
-
