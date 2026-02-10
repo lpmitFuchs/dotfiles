@@ -6,5 +6,5 @@ rofi configs from: https://github.com/adi1090x/rofi
 
 example run:
 ```bash
- ./install-profile workstation-arch arch-hypr
+./install-profile arch-pc arch-init
 ```
