@@ -27,15 +27,11 @@
     ~/.zshrc: zshrc
     ~/.p10k.zsh: p10k.zsh
     ~/.gitconfig: gitconfig
-    ~/.config/rofi: rofi
     ~/.config/ghostty: ghostty
     ~/.config/hypr:
       force: true
       glob: true
       path: hypr
-    ~/.config/waybar: waybar
-    ~/.config/dunst: dunst
-    ~/.config/wlogout: wlogout
     ~/.oh-my-zsh/custom/plugins/fzf-zsh-plugin: fzf-zsh-plugin
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: zsh-autosuggestions
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: zsh-syntax-highlighting
@@ -43,7 +39,7 @@
 
 - shell:
     - [
-      yay -S --noconfirm
+      paru -S --noconfirm
       tmux
       direnv
       nvim
