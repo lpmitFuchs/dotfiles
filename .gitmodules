@@ -22,4 +22,4 @@
 	url = https://github.com/EliverLara/candy-icons.git
 [submodule "meta/dotbot-paru"]
 	path = meta/dotbot-paru
-	url = https://github.com/yousuc/dotbot-paru
+	url = https://github.com/michaelray27/dotbot-paru.git
