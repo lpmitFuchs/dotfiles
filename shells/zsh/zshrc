@@ -125,7 +125,7 @@ if [ -f "$HOME/.fzf.zsh" ] ; then
   source "$HOME/.fzf.zsh"
 fi
 
-source $HOME/cnpg.zsh
+#source $HOME/cnpg.zsh
 export EDITOR="/usr/bin/nvim"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$Home/go/bin:/usr/bin/vendor_perl:$PATH"
 export AWS_PROFILE=home
