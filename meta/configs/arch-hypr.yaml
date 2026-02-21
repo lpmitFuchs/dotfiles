@@ -10,6 +10,14 @@
     - pciutils
     - hyprqt6engine
     - hyprland
+    - aquamarine
+    - hyprcursor
+    - hyprgraphics
+    - hyprland-guiutils
+    - hyprtoolkit
+    - hyprwire
+    - tomlplusplus
+    - xorg-xwayland
     - xdg-desktop-portal-hyprland
     - xdg-desktop-portal
     - hyprpicker
