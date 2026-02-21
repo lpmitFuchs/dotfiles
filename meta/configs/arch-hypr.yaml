@@ -1,33 +1,47 @@
 ---
 
 - link:
-    ~/.config/rofi: tools/rofi/rofi/files
-    ~/.config/custom/rofi: tools/rofi/custom
     ~/.config/hypr:
       force: true
       glob: true
       path: gui/hypr/hypr
-    ~/.config/waybar: gui/hypr/waybar
-    ~/.config/dunst: gui/hypr/dunst
-    ~/.config/wlogout: gui/hypr/wlogout
 
-- yay:
-    - hyprpaper
-    - wlogout
-    - cliphist
-    - rofi
-    - xorg-xwayland
+- paru:
+    - pciutils
+    - hyprqt6engine
     - hyprland
-    - hypridle
-    - waybar
-    - dunst
-    - cpio
-    - bc
-    - thunar
     - xdg-desktop-portal-hyprland
-    - qt5-wayland
-    - qt6-wayland
-    - hyprlock
+    - xdg-desktop-portal
+    - hyprpicker
+    - hyprpolkitagent
+    - archlinux-xdg-menu
+    - hyprshot
+    - ark
+    - dolphin-plugins
+    - kio-extras
+    - kio-fuse
+    - emote
+    - ydotool
+    - emote
+    - papirus-icon-theme-git
+    - satty
+    - gimp
+    - clipse
+    - jq
+    - imagemagick
+    - power-profiles-daemon
+    - hypridle
+    - seahorse
+    - wl-clipboard
+    - phinger-cursors
+    - brightnessctl
+    - playerctl
+    - inotify-tools
+    - wf-recorder
+    - equibop-bin
+    - yubico-authenticator
+    - joplin-appimage
+    - firefox
     - ttf-font-awesome
     - fastfetch
     - ttf-fira-sans
@@ -35,7 +49,17 @@
     - ttf-firacode-nerd
     - fuse2
     - gtk4
-    - libadwaita
-    - jq
     - python-gobject
-
+    - dms-shell-bin
+    - qt5ct
+    - khal
+    - qt6ct-kde
+    - cava
+    - i2c-tools
+    - qt5-wayland
+    - qt6-wayland
+    - cliphist
+    - qt6-multimedia
+    - accountsservice
+    - matugen
+    - python-pywalfox
