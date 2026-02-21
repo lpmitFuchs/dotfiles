@@ -9,7 +9,6 @@
 - paru:
     - pciutils
     - hyprqt6engine
-    - hyprland
     - aquamarine
     - hyprcursor
     - hyprgraphics
@@ -59,6 +58,7 @@
     - fuse2
     - gtk4
     - python-gobject
+    - hyprland
     - dms-shell-bin
     - qt5ct
     - khal
