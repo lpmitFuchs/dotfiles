@@ -16,6 +16,7 @@
     - hyprpolkitagent
     - archlinux-xdg-menu
     - hyprshot
+    - hyprlock
     - ark
     - dolphin-plugins
     - kio-extras
@@ -63,3 +64,5 @@
     - accountsservice
     - matugen
     - python-pywalfox
+    - greetd
+    - greetd-tuigreet
