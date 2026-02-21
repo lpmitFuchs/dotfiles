@@ -21,7 +21,7 @@
       mode: 0700
 
 - shell:
-    - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || echo ok
+    - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended || echo ok
       description: "install ohmyzsh"
       stdin: true
 
