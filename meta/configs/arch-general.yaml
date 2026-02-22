@@ -1,5 +1,10 @@
 ---
 
+- defaults:
+    link:
+      create: true
+      relink: true
+
 - paru:
     - zsh
     - lsd
@@ -19,3 +24,16 @@
     - zoxide
     - yazi
     - udiskie
+
+- shell:
+    - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended || echo ok
+      description: "install ohmyzsh"
+      stdin: true
+
+- link:
+    ~/.oh-my-zsh/custom/plugins/fzf-zsh-plugin: shells/zsh/fzf-zsh-plugin
+    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: shells/zsh/zsh-autosuggestions
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: shells/zsh/zsh-syntax-highlighting
+    ~/.oh-my-zsh/custom/themes/powerlevel10k: shells/zsh/powerlevel10k
+    ~/.zshrc: shells/zsh/zshrc
+    ~/.p10k.zsh: shells/zsh/p10k.zsh
