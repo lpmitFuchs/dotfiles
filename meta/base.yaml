@@ -20,15 +20,13 @@
     ~/.ssh:
       mode: 0700
 
-- shell:
-    - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended || echo ok
-      description: "install ohmyzsh"
-      stdin: true
-
 #- shell:
 #    - command: git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf; ~/.fzf/install
 #      description: "install fzf"
 #      stdin: true
+
+#- link:
+#    ~/.config/ghostty: terminals/ghostty
 
 - link:
     ~/.tmux.conf: terminals/tmux.conf
@@ -36,14 +34,7 @@
     ~/.config/nvim: editors/nvim
     ~/.config/yamlfmt/.yamlfmt: tools/yamlfmt
     ~/.aliases: tools/aliases
-    ~/.zshrc: shells/zsh/zshrc
-    ~/.p10k.zsh: shells/zsh/p10k.zsh
     ~/.gitconfig: tools/git/gitconfig
-    ~/.config/ghostty: terminals/ghostty
-    ~/.oh-my-zsh/custom/plugins/fzf-zsh-plugin: shells/zsh/fzf-zsh-plugin
-    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: shells/zsh/zsh-autosuggestions
-    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: shells/zsh/zsh-syntax-highlighting
-    ~/.oh-my-zsh/custom/themes/powerlevel10k: shells/zsh/powerlevel10k
     ~/.config/qt5ct: gui/qt5ct
     ~/.config/gtk-3.0: gui/gtk-3
     ~/.local/share/icons/candy-icons: gui/candy-icons
