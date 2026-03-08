@@ -39,3 +39,8 @@
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: shells/zsh/zsh-syntax-highlighting
     ~/.oh-my-zsh/custom/themes/powerlevel10k: shells/zsh/powerlevel10k
     ~/.p10k.zsh: shells/zsh/p10k.zsh
+
+- shell:
+    - command: chsh /bin/zsh
+      description: "change deafault shell"
+      stdin: true
