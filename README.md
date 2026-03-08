@@ -3,5 +3,5 @@ Dotfiles
 
 example run:
 ```bash
-./install-profile arch-pc arch-init
+./install-profile arch-pc arch-hypr
 ```
