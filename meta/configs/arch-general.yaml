@@ -41,6 +41,6 @@
     ~/.p10k.zsh: shells/zsh/p10k.zsh
 
 - shell:
-    - command: chsh /bin/zsh
+    - command: chsh -s /bin/zsh
       description: "change deafault shell"
       stdin: true
