@@ -1,10 +1,20 @@
 ---
 
 - link:
-    ~/.config/hypr:
-      force: true
+    /etc/greetd/config.toml: no-stow-root/etc/greetd/config.toml
+    /etc/:
       glob: true
-      path: gui/hypr/hypr
+      path: meta/dotfiles/root/etc/*
+      relink: true
+    ~/.config/:
+      glob: true
+      path: meta/dotfiles/.config/*
+      relink: true
+      exclude: [ meta/dotfiles/.config/DankMaterialShell/settings.json.dist ]
+    ~/.local/share/fonts/ttf/:
+      glob: true
+      path: meta/dotfiles/.local/share/fonts/ttf/*
+      relink: true
 
 - paru:
     - pciutils
