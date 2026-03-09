@@ -18,6 +18,7 @@
 
 - paru:
     - pciutils
+    - kitty
     - hyprqt6engine
     - aquamarine
     - hyprcursor
