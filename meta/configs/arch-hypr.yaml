@@ -10,7 +10,6 @@
       glob: true
       path: meta/dotfiles/.config/*
       relink: true
-      exclude: [ meta/dotfiles/.config/DankMaterialShell/settings.json.dist ]
     ~/.local/share/fonts/ttf/:
       glob: true
       path: meta/dotfiles/.local/share/fonts/ttf/*
@@ -85,3 +84,8 @@
     - python-pywalfox
     - greetd
     - greetd-tuigreet
+
+- shell:
+  - command: sudo systemctl enable greetd.service
+    description: "enable greetd"
+    stdin: true
